@@ -1,0 +1,17 @@
+import numpy as np
+
+tinggi_pemain = [180, 185, 175, 190, 170, 195, 165]
+
+rentang_data = np.ptp(tinggi_pemain)
+varians_data = np.var(tinggi_pemain)
+deviasi_standar_data = np.std(tinggi_pemain)
+
+kuartil_1, kuartil_2, kuartil_3 = np.percentile(tinggi_pemain, [25, 50, 75])
+
+print("Tinggi Pemain:", tinggi_pemain)
+print("Rentang (Range):", rentang_data)
+print("Varians:", varians_data)
+print("Deviasi Standar:", deviasi_standar_data)
+print("Kuartil 1:", kuartil_1)
+print("Kuartil 2 (Median):", kuartil_2)
+print("Kuartil 3:", kuartil_3)
