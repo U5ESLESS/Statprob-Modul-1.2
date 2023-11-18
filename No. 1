@@ -1,0 +1,17 @@
+import numpy as np
+
+jumlah_gol = [19, 10, 10, 12, 13, 15, 14, 13, 9, 17]
+
+rentang_data = np.ptp(jumlah_gol)
+varians_data = np.var(jumlah_gol)
+deviasi_standar_data = np.std(jumlah_gol)
+
+kuartil_1, kuartil_2, kuartil_3 = np.percentile(jumlah_gol, [25, 50, 75])
+
+print("Jumlah Gol Pemain:", jumlah_gol)
+print("Rentang (Range):", rentang_data)
+print("Varians:", varians_data)
+print("Deviasi Standar:", deviasi_standar_data)
+print("Kuartil 1:", kuartil_1)
+print("Kuartil 2 (Median):", kuartil_2)
+print("Kuartil 3:", kuartil_3)
